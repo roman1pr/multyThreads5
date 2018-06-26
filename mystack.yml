@@ -1,0 +1,12 @@
+version: "3"
+services:
+
+  hadoop-master:
+    image: pra/hadoop-spark
+    ports:
+      - "50070:50070"
+      - "8088:8088"
+      - "8080:8080"	
+
+  hadoop-slave0:
+    image: pra/hadoop-spark
